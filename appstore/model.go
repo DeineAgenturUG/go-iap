@@ -95,7 +95,7 @@ type (
 
 		IsTrialPeriod        string `json:"is_trial_period"`
 		IsInIntroOfferPeriod string `json:"is_in_intro_offer_period,omitempty"`
-		IsUpgraded           string `json:"is_upgraded"`
+		IsUpgraded           string `json:"is_upgraded,omitempty"`
 
 		ExpiresDate
 
@@ -104,7 +104,6 @@ type (
 
 		CancellationDate
 		CancellationReason string `json:"cancellation_reason,omitempty"`
-		IsUpgraded         string `json:"is_upgraded,omitempty"`
 	}
 
 	// The Receipt type has whole data of receipt

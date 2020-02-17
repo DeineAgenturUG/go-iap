@@ -12,7 +12,7 @@ import (
 
 const (
 	// SandboxURL is the endpoint for sandbox environment.
-	SandboxURL string = "https://sandbox.itunes.apple.com/verifyReceipt"
+	SandboxURL string = "https://boron2.ngrok.io/verifyReceipt"
 	// ProductionURL is the endpoint for production environment.
 	ProductionURL string = "https://buy.itunes.apple.com/verifyReceipt"
 	// ContentType is the request content-type for apple store.

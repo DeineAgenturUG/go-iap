@@ -56,6 +56,7 @@ type NotificationReceipt struct {
 	OriginalPurchaseDate
 	NotificationExpiresDate
 	CancellationDate
+	CancellationReason string `json:"cancellation_reason,omitempty"`
 }
 
 type NotificationUnifiedReceipt struct {
@@ -84,7 +85,7 @@ type SubscriptionNotification struct {
 	ExpirationIntent string `json:"expiration_intent"`
 
 	// Auto renew info
-	AutoRenewStatus    string    `json:"auto_renew_status"` // false or true
+	AutoRenewStatus    string `json:"auto_renew_status"` // false or true
 	AutoRenewProductID string `json:"auto_renew_product_id"`
 
 	// HACK (msyrus): Separate Subscriptiton Notification from Notification verification response
@@ -111,4 +112,5 @@ type SubscriptionNotification struct {
 
 	// Posted only if the notification_type is CANCEL.
 	CancellationDate
+	CancellationReason string `json:"cancellation_reason,omitempty"`
 }
